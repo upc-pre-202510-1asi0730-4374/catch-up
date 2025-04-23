@@ -3,6 +3,7 @@ import './style.css'
 import App from './App.vue'
 import PrimeVue from 'primevue/config'
 import Aura from '@primevue/themes/aura'
+import i18n from "./i18n.js"
 import 'primeicons/primeicons.css'
 import 'primeflex/primeflex.css'
 import {Avatar, Button, Card, Drawer, Menu, Menubar, SelectButton, Toolbar, Tooltip} from "primevue";
@@ -22,4 +23,7 @@ app
     .component('pv-tooltip', Tooltip)
     .component('pv-image', Image)
     .component('pv-menubar', Menubar)
+    .use(i18n)
     .mount('#app')
+
+// SCOPE
